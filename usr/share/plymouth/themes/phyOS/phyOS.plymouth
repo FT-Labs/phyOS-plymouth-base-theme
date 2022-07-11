@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=phyOS Plymouth Theme
+Description=Base plymouth theme of phyOS
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/phyOS
+ScriptFile=/usr/share/plymouth/themes/phyOS/phyOS.script
