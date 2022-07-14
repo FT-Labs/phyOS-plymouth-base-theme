@@ -56,13 +56,13 @@ else {
 }
 
 ratio =  logo.original_image.GetWidth() / logo.original_image.GetHeight();
-reduction = 0.2;
+reduction = 0.075;
 logo.image = logo.original_image.Scale(reduction * Window.GetMaxWidth() , reduction / ratio *  Window.GetMaxWidth());
 logo.sprite = SpriteNew();
 logo.sprite.SetImage(logo.image);
 logo.opacity_angle = 0;
 logo.sprite.SetX((Window.GetX() + Window.GetMaxWidth()  - logo.image.GetWidth())  / 2);
-logo.sprite.SetY(Window.GetY() + Window.GetHeight() * 0.2);
+logo.sprite.SetY(Window.GetY() + Window.GetHeight() * 0.5);
 
 background.image = background.original_image.Scale(Window.GetMaxWidth() , Window.GetMaxHeight());
 background.sprite = SpriteNew();
